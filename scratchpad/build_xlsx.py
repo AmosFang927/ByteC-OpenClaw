@@ -51,9 +51,9 @@ r = 3
 ws.cell(r,1,"一、核算公式").font = f(bold=True, size=11)
 r += 1
 formulas = [
-    ("① MTD Cost", "= Action Earnings + AF Cost   ⟹   Action Earnings = MTD Cost − AF Cost"),
-    ("② 核减金额", "= AF Cost − (AF Cost + Action Earnings) × 优化目标%  = AF Cost − MTD Cost × 优化目标%"),
-    ("③ AF Cost%", "= AF Cost / MTD Cost"),
+    ("① MTD Cost", "MTD Cost = Action Earnings + AF Cost　（⟹ Action Earnings = MTD Cost − AF Cost）"),
+    ("② 核减金额", "核减金额 = AF Cost − (AF Cost + Action Earnings) × 优化目标%　= AF Cost − MTD Cost × 优化目标%"),
+    ("③ AF Cost%", "AF Cost% = AF Cost / MTD Cost"),
 ]
 for name, formula in formulas:
     ws.cell(r,1,name).font = f(bold=True)
